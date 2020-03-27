@@ -7,11 +7,12 @@ import { UsersService } from '../../services/users.service';
   styleUrls: ['./two.component.css']
 })
 export class TwoComponent implements OnInit {
-  user:string;
-  constructor(private usersService:UsersService) { }
+
+  user: string;
+  constructor(private usersService: UsersService) { }
 
   ngOnInit() {
-    this.usersService.cast.subscribe(user=> this.user = user);
+    this.usersService.cast.subscribe(user => this.user = user);
   }
 
 }
